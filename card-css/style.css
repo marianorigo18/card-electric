@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+:root{
+    --color--gris: #D0D3D4;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    max-width: 850px;
+    margin: 0 auto;
+}
+.container__cards{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: .5rem;
+    margin: 0 1rem;
+    max-width: 100%;
+}
+@media(min-width: 540px){
+    .container__cards{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+@media(min-width: 768px){
+    .container__cards{
+        grid-template-columns: repeat(4,1fr);
+        margin: 0 auto;
+    }
+}
+.article__title{
+    text-transform: uppercase;
+    color: #999999;
+    margin: 1rem;
+}
+
+.card{
+    max-width: 20rem;
+    margin: 0 auto;
+    box-shadow: 1px 1px 6px #d0d3d4;
+}
+.card__ilustration{
+    text-align: center;
+}
+.card__img{
+    height: 15rem;
+    text-align: center;
+}
+.card__info{
+    margin-left: 1rem;
+}
+.card__type{
+    padding: 0.5rem 0;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    color: var(--color--gris);
+}
+.card__title{
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+.card__description{
+    font-size: 0.8rem;
+    color: #7B7D7D; 
+    padding: 0.8rem 0;
+}
+.card__icons{
+    text-align: end;
+    margin: 1rem 2rem;
+}
+.card__icons i{
+    font-size: 1.5rem;
+    color: #454545;
+
+}
